@@ -1,0 +1,78 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Màu nền xám nhạt */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Khung chứa chính */
+.container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Ảnh đại diện */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Bo tròn ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+}
+
+.username {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+/* Các nút link */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nút */
+}
+
+.link-button {
+    display: block;
+    background-color: #007bff; /* Màu nút chính */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hiệu ứng khi di chuột qua */
+.link-button:hover {
+    background-color: #0056b3; /* Đổi màu khi hover */
+    transform: scale(1.03); /* Phóng to nhẹ */
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #aaa;
+}
